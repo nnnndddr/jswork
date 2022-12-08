@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class],{
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd{
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color:black;
+}
+
+ul[class],
+li[class]{
+    list-style: none;
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select{
+    font:inherit;
+}
+/*END OF DEFAULT*/
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Open Sans;
+  text-align: center;
+}
+
+header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+}
+
+header a {
+  float: left;
+  color: #FF1493;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #FF1493;
+  color: #212121;
+  transition: all 0.6s ease-in-out;
+}
+
+
+
+nav {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  nav {
+    float: none;
+  }
+}
+
+/* Слайдер */
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 501px;
+    overflow: hidden;
+    text-align: justify;
+}
+/* Картинка масштабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+}
+/* Кнопки вперед и назад */
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    /* padding-top: 30%; */
+}
+.slider .previous{
+    float: left;
+    /* padding-top: 30%; */
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Анимация слайдов */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.hype{
+    color:#FF1493;
+}
