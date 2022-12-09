@@ -5,7 +5,7 @@
 }
 
 ul[class],
-ol[class],{
+ol[class]{
     padding: 0;
 }
 
@@ -172,3 +172,100 @@ nav {
 .hype{
     color:#FF1493;
 }
+
+
+/* .content{
+    color: #FF1493;
+} */
+
+/* .collapsible i{
+    color: #FF1493;
+} */
+
+.collapsible {
+    
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 570px;
+    height: 45px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+     border-color: #e7e7e7;
+      border-style: solid;
+      border-width: 1px;
+      margin-top: 9px;
+    }
+      .collapsible div img {
+      width: 18px;
+      height: 18px;
+      display: block;
+      padding: 13.5px 21px;
+      /* border-color: black; */
+      border-style: solid;
+      border-width: 0px 1px 0px 0px;
+    }
+    .active,			 
+    .collapsible: hover {
+    background-color: red;
+    }	
+      collapsible p {
+        color: #262626;
+      font-weight: 500;
+      font-size: 20px;
+      margin-left: 28px;
+      line-height: 45px;
+      }
+    .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /* background-color: white;
+    border-color: rgb(231,231,231); */
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+        width: 520px;
+    }
+      .collapsible button{
+        border-color: #FF1493;
+        border-style: solid;
+        border-width: 0px 1px 0px 0px;
+        width:510px;
+        height:45px;
+        font-size:20px;
+        display:block;
+        margin-left:60px;
+        margin-top:-48px;
+        background-color: #FF1493;
+      }
+      .collapsible i{
+        
+        display: block;
+        padding: 13.5px 21px;
+        border-color: black;
+        border-style: solid;
+        border-width: 0px 1px 0px 0px;
+        display:block;
+          background-color: black;
+          color: rgb(80,80,80);
+          box-sizing: border-box;
+        }
+           .collapsible:hover i,.collapsible:hover button{
+        color: #FF1493;
+             }
+           .collapsible i:hover{
+               color:#FF1493;
+           }
+         
+           .collapsible button:hover{
+                background-color: black;
+                border-style:solid;
+                border-width: 0px 1px 0px 0px;
+                border-color:#FF1493;
+
+           }
+    
+           
