@@ -1,3 +1,283 @@
+<<<<<<< HEAD
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class]{
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd{
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color:black;
+}
+
+ul[class],
+li[class]{
+    list-style: none;
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select{
+    font:inherit;
+}
+/*END OF DEFAULT*/
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Open Sans;
+  text-align: center;
+}
+
+header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+}
+
+header a {
+  float: left;
+  color: #FF1493;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #FF1493;
+  color: #212121;
+  transition: all 0.6s ease-in-out;
+}
+
+
+
+nav {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  nav {
+    float: none;
+  }
+}
+
+/* Слайдер */
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 501px;
+    overflow: hidden;
+    text-align: justify;
+}
+/* Картинка масштабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+}
+/* Кнопки вперед и назад */
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    /* padding-top: 30%; */
+}
+.slider .previous{
+    float: left;
+    /* padding-top: 30%; */
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Анимация слайдов */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.hype{
+    color:#FF1493;
+}
+
+
+/* .content{
+    color: #FF1493;
+} */
+
+/* .collapsible i{
+    color: #FF1493;
+} */
+
+.collapsible {
+    
+    /* color: white; */
+    cursor: pointer;
+    padding: 18px;
+    /* width: 570px; */
+    height: 60px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+     /* border-color: #e7e7e7; */
+      border-style: solid;
+      border-width: 5px;
+      margin-top: 9px;
+    }
+      .collapsible div img {
+      width: 18px;
+      height: 18px;
+      display: block;
+      /* padding: 13.5px 21px; */
+      /* border-color: black; */
+      border-style: solid;
+      border-width: 0px 1px 0px 0px;
+    }
+    /* .active,			 
+    .collapsible:hover {
+    background-color: red;
+    }	 */
+      .collapsible p {
+      /* color: #262626; */
+      font-weight: 500;
+      font-size: 20px;
+      margin-left: 28px;
+      line-height: 45px;
+      }
+    .content {
+    /* padding: 0 18px; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /* background-color: white;
+    border-color: rgb(231,231,231); */
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+        /* width: 520px; */
+    }
+      .collapsible button{
+        border-color: #FF1493;
+        border-style: solid;
+        border-width: 0px 1px 0px 0px;
+        width:340px;
+        height:45px;
+        font-size:20px;
+        display:block;
+        margin-left:25px;
+        margin-top:-31px;
+        background-color: #FF1493;
+      }
+      .collapsible i{
+        
+        display: block;
+        /* padding: 13.5px 21px; */
+        border-color: black;
+        border-style: solid;
+        border-width: 0px 1px 0px 0px;
+        display:block;
+          /* background-color: #FF1493; */
+          color: black;
+          box-sizing: border-box;
+        }
+           .collapsible:hover i,.collapsible:hover button{
+        color: #FF1493;
+        background-color:black;
+             }
+           .collapsible i:hover{
+               color:#FF1493;
+               background-color:black;
+           }
+         
+           .collapsible button:hover{
+                background-color: black;
+                border-style:solid;
+                border-width: 0px 1px 0px 0px;
+                border-color:#FF1493;
+
+           }
+    
+.collapsible{
+    background-color: #FF1493;
+}
+.collapsible:hover{
+    background-color:black;
+}
+=======
 *,
 *::before,
 *::after{
@@ -269,3 +549,4 @@ nav {
            }
     
            
+>>>>>>> 47f8eebf94bd62ab99b3b5522d8493d0c70a299f
