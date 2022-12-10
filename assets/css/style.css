@@ -175,105 +175,66 @@ nav {
 }
 
 
-/* .content{
-    color: #FF1493;
-} */
-
-/* .collapsible i{
-    color: #FF1493;
-} */
-
-.collapsible {
-    
-    /* color: white; */
-    cursor: pointer;
-    padding: 18px;
-    /* width: 570px; */
-    height: 60px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-     /* border-color: #e7e7e7; */
-      border-style: solid;
-      border-width: 5px;
-      margin-top: 9px;
-    }
-      .collapsible div img {
-      width: 18px;
-      height: 18px;
-      display: block;
-      /* padding: 13.5px 21px; */
-      /* border-color: black; */
-      border-style: solid;
-      border-width: 0px 1px 0px 0px;
-    }
-    /* .active,			 
-    .collapsible:hover {
-    background-color: red;
-    }	 */
-      .collapsible p {
-      /* color: #262626; */
-      font-weight: 500;
-      font-size: 20px;
-      margin-left: 28px;
-      line-height: 45px;
-      }
-    .content {
-    /* padding: 0 18px; */
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    /* background-color: white;
-    border-color: rgb(231,231,231); */
-    border-style: solid;
-    border-width: 0px 1px 1px 1px;
-        /* width: 520px; */
-    }
-      .collapsible button{
-        border-color: #FF1493;
-        border-style: solid;
-        border-width: 0px 1px 0px 0px;
-        width:340px;
-        height:45px;
-        font-size:20px;
-        display:block;
-        margin-left:25px;
-        margin-top:-31px;
-        background-color: #FF1493;
-      }
-      .collapsible i{
-        
-        display: block;
-        /* padding: 13.5px 21px; */
-        border-color: black;
-        border-style: solid;
-        border-width: 0px 1px 0px 0px;
-        display:block;
-          /* background-color: #FF1493; */
-          color: black;
-          box-sizing: border-box;
-        }
-           .collapsible:hover i,.collapsible:hover button{
-        color: #FF1493;
-        background-color:black;
-             }
-           .collapsible i:hover{
-               color:#FF1493;
-               background-color:black;
-           }
-         
-           .collapsible button:hover{
-                background-color: black;
-                border-style:solid;
-                border-width: 0px 1px 0px 0px;
-                border-color:#FF1493;
-
-           }
-    
-.collapsible{
-    background-color: #FF1493;
+details{
+  display:block;
+  background: black;
+  width:400px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  border-color:#FF1493;
+  overflow:hidden;
+  margin-bottom: 1.5rem;
+  margin-left: 2%;
+  text-align: left;
 }
-.collapsible:hover{
-    background-color:black;
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+   display:block;
+   padding: .3em 1em .3em .9em;
+   border-bottom: 1px solid #FF1493;
+   border-top: #FF1493;
+   font-size:1.4em;
+   cursor: pointer;
+   position: relative;
+}
+summary:before {  
+  top: .4em;
+  right: .3em;
+  color: transparent;
+  width: 1em;
+  height: 1em;  
+  content: "";
+  position: absolute;
+  transition: transform .8s;
+}
+details[open] > summary:before {
+  transform: scale(1,-1);
+}
+summary ~ * {
+   padding: 0 1em 10px 1.4em;
+}
+details[open] summary ~ *{ 
+  animation: sweep .8s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+summary:focus {
+  outline:0;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0,0,0,0.3);
+}
+details p{
+  margin-top: 9%;
+  font-size: 28px;
+}
+
+.links{
+  display: flex;
+  margin-left: 7px;
+}
+.links a{
+  padding: 5px;
 }
