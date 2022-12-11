@@ -239,3 +239,7 @@ details p{
   padding: 5px;
   font-size:27px;
 }
+.author a{
+  font-size: 30px;
+  color:#FF1493;
+}
